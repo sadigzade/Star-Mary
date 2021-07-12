@@ -457,6 +457,124 @@ p {
   color: #666666;
 }
 
+/* .aboutme */
+
+.aboutme {
+  background: #fafafa;
+  padding-top: 115px;
+  /* ._container */
+  /* .aboutme-body */
+}
+
+.aboutme .aboutme-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  /* .aboutme-body__img */
+  /* .aboutme-body__content */
+  /* .content-aboutme */
+}
+
+.aboutme .aboutme-body .aboutme-body__img {
+  width: 100%;
+}
+
+.aboutme .aboutme-body .aboutme-body__img img {
+  width: 100%;
+}
+
+.aboutme .aboutme-body .content-aboutme {
+  margin-top: 30px;
+  /* .content-aboutme__header */
+  /* .content-aboutme__descr */
+}
+
+.aboutme .aboutme-body .content-aboutme .content-aboutme__header {
+  /* .content-aboutme__header--subtitle */
+  /* .content-aboutme__header--title */
+  /* .content-aboutme__header--title */
+}
+
+.aboutme .aboutme-body .content-aboutme .content-aboutme__header .content-aboutme__header--subtitle,
+.aboutme .aboutme-body .content-aboutme .content-aboutme__header .content-aboutme__header--title {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: #b6b6b6;
+}
+
+.aboutme .aboutme-body .content-aboutme .content-aboutme__header .content-aboutme__header--title {
+  color: #646464;
+  margin-top: 10px;
+}
+
+.aboutme .aboutme-body .content-aboutme .content-aboutme__header .content-aboutme__header--title span {
+  font-family: 'ExcentraPro', sans-serif;
+  font-size: 42px;
+  color: #2713fe;
+  white-space: nowrap;
+}
+
+.aboutme .aboutme-body .content-aboutme .content-aboutme__descr {
+  margin: 30px 0 0 45px;
+  max-width: 430px;
+  /* .content-aboutme__descr--title */
+  /* .content-aboutme__descr--text */
+  /* .content-aboutme__descr--subdescr */
+}
+
+.aboutme .aboutme-body .content-aboutme .content-aboutme__descr .content-aboutme__descr--title {
+  position: relative;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.aboutme .aboutme-body .content-aboutme .content-aboutme__descr .content-aboutme__descr--title:before {
+  content: '';
+  position: absolute;
+  width: 22px;
+  height: 16px;
+  top: 5px;
+  left: -42px;
+  background: url("../img/aboutme/crown-icon.png") no-repeat;
+  background-size: cover;
+}
+
+.aboutme .aboutme-body .content-aboutme .content-aboutme__descr .content-aboutme__descr--text {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #909090;
+  margin-top: 10px;
+}
+
+.aboutme .aboutme-body .content-aboutme .content-aboutme__descr .content-aboutme__descr--subdescr {
+  margin-top: 25px;
+  padding: 27px 30px;
+  background: #f2f2f2;
+  border-radius: 15px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 25px;
+  color: #454646;
+}
+
+.aboutme .aboutme-body .content-aboutme .content-aboutme__descr .content-aboutme__descr--subdescr span {
+  color: #2713fe;
+}
+
 @media (max-width: 991.98px) {
   .main-content .content-main__title {
     width: 470px;
@@ -475,6 +593,33 @@ p {
   .benefit-body .content-benefit__block:nth-child(3),
   .benefit-body .content-benefit__block:nth-child(4) {
     margin-top: 20px;
+  }
+
+  .aboutme .aboutme-body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .aboutme .aboutme-body .aboutme-body__img {
+    width: initial;
+  }
+
+  .aboutme .aboutme-body .aboutme-body__img img {
+    width: initial;
+  }
+
+  .aboutme .aboutme-body .content-aboutme .content-aboutme__header .content-aboutme__header--subtitle,
+  .aboutme .aboutme-body .content-aboutme .content-aboutme__header .content-aboutme__header--title {
+    text-align: center;
+  }
+
+  .aboutme .aboutme-body .content-aboutme .content-aboutme__descr {
+    margin: 30px auto 0;
   }
 }
 
@@ -513,6 +658,41 @@ p {
 
   .benefit-body .header-benefit__subtitle {
     font-size: 20px;
+  }
+
+  .aboutme {
+    padding: 50px 0;
+  }
+
+  .aboutme .aboutme-body .aboutme-body__img {
+    width: 80%;
+    text-align: center;
+  }
+
+  .aboutme .aboutme-body .aboutme-body__img img {
+    width: 80%;
+  }
+
+  .aboutme .aboutme-body .content-aboutme .content-aboutme__header .content-aboutme__header--subtitle,
+  .aboutme .aboutme-body .content-aboutme .content-aboutme__header .content-aboutme__header--title {
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  .aboutme .aboutme-body .content-aboutme .content-aboutme__header .content-aboutme__header--title {
+    margin-top: 5px;
+  }
+
+  .aboutme .aboutme-body .content-aboutme .content-aboutme__header .content-aboutme__header--title span {
+    font-size: 26px;
+  }
+
+  .aboutme .aboutme-body .content-aboutme .content-aboutme__descr .content-aboutme__descr--title {
+    text-align: center;
+  }
+
+  .aboutme .aboutme-body .content-aboutme .content-aboutme__descr .content-aboutme__descr--title:before {
+    left: 20px;
   }
 }
 
@@ -646,6 +826,18 @@ p {
 
   .benefit-body .content-benefit__block:nth-child(n) {
     margin-top: 20px;
+  }
+
+  .aboutme .aboutme-body .content-aboutme .content-aboutme__header .content-aboutme__header--title span {
+    white-space: initial;
+  }
+
+  .aboutme .aboutme-body .content-aboutme .content-aboutme__descr .content-aboutme__descr--title:before {
+    top: -20px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
 }
 
