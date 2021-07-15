@@ -77,7 +77,9 @@ p {
 .aboutme,
 .works,
 .feedback,
-.advantages {
+.advantages,
+.cases,
+.result {
   padding: 100px 0 140px;
 }
 
@@ -86,7 +88,8 @@ p {
 .works-body__header,
 .form-feedback__header,
 .advantages-body__header,
-.cases-body__header {
+.cases-body__header,
+.result-body__header {
   text-align: center;
 }
 
@@ -101,11 +104,14 @@ p {
 .advantages-body__header__title,
 .advantages-body__header--title,
 .cases-body__header__title,
-.cases-body__header--title {
+.cases-body__header--title,
+.result-body__header__title,
+.result-body__header--title {
   font-size: 48px;
   font-weight: 400;
   text-transform: uppercase;
   margin-bottom: 10px;
+  line-height: 45px;
 }
 
 .header-benefit__subtitle,
@@ -119,7 +125,9 @@ p {
 .advantages-body__header__subtitle,
 .advantages-body__header--subtitle,
 .cases-body__header__subtitle,
-.cases-body__header--subtitle {
+.cases-body__header--subtitle,
+.result-body__header__subtitle,
+.result-body__header--subtitle {
   font-family: 'Ubuntu', sans-serif;
   font-size: 24px;
   font-weight: 300;
@@ -1185,6 +1193,60 @@ p {
   width: 100%;
 }
 
+.result {
+  padding-bottom: 100px;
+}
+
+.result .result-body .content-result {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 45px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.result .result-body .content-result__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 24%;
+          flex: 0 1 24%;
+}
+
+.result .result-body .content-result__block--title {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.result .result-body .content-result__block--descr {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 25px;
+  color: #4c4c4c;
+  text-align: center;
+  margin-top: 25px;
+}
+
 @media (max-width: 991.98px) {
   .main-content .content-main__title {
     width: 470px;
@@ -1273,7 +1335,9 @@ p {
   .aboutme,
   .works,
   .feedback,
-  .advantages {
+  .advantages,
+  .cases,
+  .result {
     padding: 50px 0;
   }
 
@@ -1288,8 +1352,11 @@ p {
   .advantages-body__header__title,
   .advantages-body__header--title,
   .cases-body__header__title,
-  .cases-body__header--title {
-    font-size: 36px !important;
+  .cases-body__header--title,
+  .result-body__header__title,
+  .result-body__header--title {
+    font-size: 28px !important;
+    line-height: 35px;
   }
 
   .header-benefit__subtitle,
@@ -1303,7 +1370,9 @@ p {
   .advantages-body__header__subtitle,
   .advantages-body__header--subtitle,
   .cases-body__header__subtitle,
-  .cases-body__header--subtitle {
+  .cases-body__header--subtitle,
+  .result-body__header__subtitle,
+  .result-body__header--subtitle {
     font-size: 20px !important;
   }
 
@@ -1417,6 +1486,17 @@ p {
   .cases-body__content .block-cases {
     max-width: 30%;
   }
+
+  .result .result-body .content-result {
+    margin-top: 20px;
+  }
+
+  .result .result-body .content-result__block {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 50%;
+            flex: 0 1 50%;
+    margin-top: 25px;
+  }
 }
 
 @media (max-width: 601px) {
@@ -1475,6 +1555,16 @@ p {
 }
 
 @media (max-width: 479.98px) {
+  .benefit,
+  .aboutme,
+  .works,
+  .feedback,
+  .advantages,
+  .cases,
+  .result {
+    padding: 25px 0;
+  }
+
   .header-benefit__title,
   .header-benefit--title,
   .clients-body__header__title,
@@ -1486,8 +1576,10 @@ p {
   .advantages-body__header__title,
   .advantages-body__header--title,
   .cases-body__header__title,
-  .cases-body__header--title {
-    font-size: 30px !important;
+  .cases-body__header--title,
+  .result-body__header__title,
+  .result-body__header--title {
+    font-size: 24px !important;
   }
 
   .header-benefit__subtitle,
@@ -1501,7 +1593,9 @@ p {
   .advantages-body__header__subtitle,
   .advantages-body__header--subtitle,
   .cases-body__header__subtitle,
-  .cases-body__header--subtitle {
+  .cases-body__header--subtitle,
+  .result-body__header__subtitle,
+  .result-body__header--subtitle {
     font-size: 18px !important;
   }
 
@@ -1616,6 +1710,12 @@ p {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+
+  .result .result-body .content-result__block {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
   }
 }
 
